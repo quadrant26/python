@@ -5,6 +5,7 @@ try:
     print(a[3])
     f = open("a.txt")
     print(f.read())
+    
 except (ValueError, IndexError) as reason:
     print(str(reason))
 finally:
