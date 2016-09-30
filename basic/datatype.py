@@ -39,4 +39,3 @@ print(type(2e+12))
 print(isinstance(c, str))
 print(isinstance(c, int))
 print(isinstance(c, bool))
-
