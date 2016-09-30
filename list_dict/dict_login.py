@@ -43,6 +43,6 @@ while 1:
         reg()
     elif code == 'Q' or code == 'q':
         quits()
-        break; 
+        break;  
          
         
