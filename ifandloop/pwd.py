@@ -17,7 +17,7 @@ while times > 0:
                 break
             pwd = input("输入不正确，请重新输入，还剩下%s \n" % times)
         else:
-            print("输入正确，欢迎进入")
+            print("输入正确，欢迎进入") 
 
 
 
