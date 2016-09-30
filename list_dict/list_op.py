@@ -52,7 +52,7 @@ print(list3)
 
 list4 = list3
 list4 = [6]
-print(list3)
+print(list3) 
 
 list3.clear()
 print(list3)
