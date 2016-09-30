@@ -26,4 +26,4 @@ if length <= 8 and passwd.isalnum():
 elif 8 < length < 16 and ( passwd.isalnum()   ):
     print("这是一个中级的密码")
 elif length >= 16 and passwd[0].isalpha():
-    print("这是一个高级密码，已经很安全了")
+    print("这是一个高级密码，已经很安全了") 
