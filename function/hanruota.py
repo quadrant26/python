@@ -25,4 +25,4 @@ def hanoi(n, x, y, z):
         print(x, '-->', z) #将最底下的最后一个盘子 从 x 移动到 z 上
         hanoi(n-1, y, x, z)# 将y 上的 n-1 个盘子 移动到 z 上
 
-hanoi(64, 'x', 'y', 'z')
+hanoi(64, 'x', 'y', 'z') 
