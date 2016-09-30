@@ -9,6 +9,7 @@ finally:
     f.close()
 '''
 
+
 try:
     with open('data.txt', 'w') as f:
         for each_line in f:
