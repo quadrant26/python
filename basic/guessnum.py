@@ -28,7 +28,6 @@ while (guess != secret) and (i > 0):
         else:
             print("你已经没有机会了！")
         
-          
         
 
 print("game over")
