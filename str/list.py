@@ -55,8 +55,6 @@ print(zip(a, b))
 
 print(list(zip(a,b)))
 
-
-
 def sum(**kw):
     result = 0;
     for each in kw:
