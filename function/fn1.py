@@ -20,8 +20,6 @@ def add2(num1, num2):
 print(add2(4, 6))
 
 
-
-
 # 函数 扩展
 
 def power(x, y):
