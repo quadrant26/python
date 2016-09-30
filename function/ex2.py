@@ -23,7 +23,7 @@ get_digits(12345)
 print(list1);
 
 def is_finlian(n, start, end):
-    if start > end:
+    if start > end: 
         return 1
     else:
         return is_finlian(n, start+1, end-1) if n[start] == n[end] else 0
