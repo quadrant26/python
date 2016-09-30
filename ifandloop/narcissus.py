@@ -20,4 +20,4 @@ for i in range(100, 1000):
         temp //= 10
 
     if sum == i:
-        print(i)
+        print(i) 
