@@ -28,4 +28,4 @@ if len(differ) == 0:
 else:
     print("两个文件共有【%d】处不同" % len(differ))
     for each in differ:
-        print("第 %d 行不一样" % each)
+        print("第 %d 行不一样" % each) 
