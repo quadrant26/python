@@ -40,7 +40,7 @@ def showmenu():
     |--- 请输入指令代码：
     '''
     while True:
-        chosen = False
+        chosen = False 
         while not chosen:
             choice = input(prompt)
             if choice not in "NnEeQq":
