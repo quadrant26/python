@@ -74,7 +74,7 @@ def funout():
         print('宾果，你成功访问到我了')
     return funIn()
 
-i = funout()
+i = funout() 
 
 def funout2():
     def funIn2():
