@@ -23,6 +23,7 @@ f4.close();
 # 4. 将文件对象放入列表 list(f)
 
 # 5. 迭代打印
+
 f = open("D:\\wamp\\www\\python\\jiayu\\test.txt")
 #print(f.tell())  # 指针的位置
 print(f)
