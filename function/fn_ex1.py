@@ -81,4 +81,4 @@ def strcount(*params):
 #str2 = input("请输入第二个字符串：")
 str1 = "I love fishC.com."
 str2 = "I love you, you love me."
-strcount(str1, str2)        
+strcount(str1, str2)       
