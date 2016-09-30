@@ -23,7 +23,7 @@ elif 80 < score < 90:
 elif 90 < score <= 100:
     print('A')
 else:
-    print('输入错误')
+    print('输入错误') 
 
 x,y,z = 6,4,2
 
