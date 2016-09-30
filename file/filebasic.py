@@ -32,7 +32,6 @@ for each_line in f:
     print(each_line)
 f.close();
 
-
 f1 = open("D:/wamp/www/python/jiayu/OpenMe.mp3")
 f2 = open("D:\\wamp\\www\\python\\jiayu\\music.txt", "x")
 
