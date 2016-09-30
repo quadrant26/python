@@ -45,7 +45,7 @@ c *= 10
 print (c)
 d /= 10
 print (d )
-
+ 
 print (10 // 8)
 
 print (-3 ** 2)
