@@ -44,7 +44,6 @@ f = lambda x, y=3:x*y
 print( f(3))
 
 g = lambda x : x if x % 2 else None
-
 print( g(6) )
 
 def fx(x):
