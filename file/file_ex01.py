@@ -15,4 +15,4 @@ def file_write(filename):
     f.close()
 
 filename = input("请输入文件名：")
-file_write(filename)
+file_write(filename) 
