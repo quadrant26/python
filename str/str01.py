@@ -91,7 +91,7 @@ print()
 str11= '''alkjfasf
 asldfjlsjdf'''
 
-str12 = 'skhfksdf\
+str12 = 'skhfksdf\ 
 skjfhksfj\
 sdfjhsjfs'
 
