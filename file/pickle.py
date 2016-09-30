@@ -42,6 +42,6 @@ def split_file(file_name):
 
     f.close()
     
-split_file('record.txt')
+split_file('record.txt') 
                 
     
