@@ -49,7 +49,6 @@ def findstr(s, substr):
             
     print("子字符串在目标字符串中共出现",result,"次")
 
-
 findstr(str1, substr)
 
 def findstr2(desstr, substr):
