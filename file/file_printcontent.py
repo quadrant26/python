@@ -1,6 +1,7 @@
 import os
 import os.path
 
+
 # 编写一个程序，单用户输入文件名和行数后，将该文件的前 N 行打印出来
 
 def file_view(filename, linenum):
