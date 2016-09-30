@@ -51,5 +51,3 @@ view_file(filename, linenum)
 
 
 
-
-
