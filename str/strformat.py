@@ -64,8 +64,6 @@ print('%010d' % 5)
 print('\a')
 
 
-
-
 print("{{1}}".format("不打印", "打印"))
 
 print("{a} love {b}.{c}".format(a="I", b="FishC", c="com"))
