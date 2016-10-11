@@ -60,17 +60,21 @@ class MyTimer:
         self.begin = 0
         self.end = 0
 
-                
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
+t1 = MyTimer()
+t1
+print(t1)
+t1.start()
+t.sleep(3)
+t1.stop()
+
+t2 = MyTimer()
+t2
+t2.start()
+t.sleep(9)
+t2.stop()
+
+print(t1+t2)
+
             
             
             
