@@ -3,7 +3,7 @@
 def myRev(data):
     # 对数据进行倒序 类似 reverse()
     for index in range(len(data)-1, -1, -1):
-            yield data[index]
+        yield data[index]
 
 
 for i in myRev("King"):
