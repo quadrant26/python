@@ -1,5 +1,4 @@
 # 属性访问的魔术方法
-
 class C:
         def __getattr__(self, name):
                 print(1)
