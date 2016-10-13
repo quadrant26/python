@@ -1,5 +1,6 @@
 # const 模块用于让 python 支持常量操作
 import const
+import hello
 
 const.NAME = "fishC"
 print(const.NAME)
@@ -16,8 +17,10 @@ try:
 except TypeError as Err:
 	print(Err)
 
+hello.hi()
 
 '''
 常量无法改变
 常量名必须由大写字母组成
 '''
+	
