@@ -33,26 +33,26 @@ def find_imgs(url):
 	a = html.find('img src=')
 	
 	while a != -1:
-		b = html.find(".jpg", a, a+255)
+		b = html.find(".jpg", a, a+100)
 		# 不是 jpg 返回 -1
 		if b != -1:
 			img_adds.append(html[a+9:b+4])
 		else:
 			b = a + 9
+			
 		a = html.find("img src=", b)
-  
+		
 	return img_adds
 		
 
 def save_imgs(folder, img_adds):
 	for each in img_adds:
 		filename = each.split("/")[-1]
-		print(filename)
 		with open(filename, 'wb') as f:
 			img = url_open(each)
 			f.write(img)
 
-def download_mm(folder='mm', pages=10):
+def download_mm(folder='J:\pmm\mm', pages=10):
 	'''
 	if not os.path.isdir(folder):
 		os.mkdir(folder)
@@ -68,6 +68,7 @@ def download_mm(folder='mm', pages=10):
 		
 	url = "http://jiandan.net/ooxx/"
 	page_num = int(get_pages(url))
+	
 	
 	page_url = url + 'page-' + str(page_num) + "#comments"
 	img_adds = find_imgs(page_url)
