@@ -1,6 +1,3 @@
-'''
-test urllib2
-'''
 import urllib2
 import cookielib
 
