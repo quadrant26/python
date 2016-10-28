@@ -219,7 +219,7 @@ def main():
                     if not(delay % 3):
                         if e3_destory_index == 0:
                             enemy3_down_sound.play()
-                        screen.blit(each.destory_images[e3_destory_index], each.rect)
+                        screen.blit(each.destroy_images[e3_destory_index], each.rect)
                         e3_destory_index = (e3_destory_index + 1) % 6
                         if e3_destory_index == 0:
                             enemy3_fly_sound.stop()
@@ -252,7 +252,7 @@ def main():
                     if e2_destory_index == 0:
                             enemy2_down_sound.play()
                     if not(delay % 3):
-                        screen.blit(each.destory_images[e2_destory_index], each.rect)
+                        screen.blit(each.destroy_images[e2_destory_index], each.rect)
                         e2_destory_index = (e2_destory_index + 1) % 4
                         if e3_destory_index == 0:
                             score += 6000
@@ -268,7 +268,7 @@ def main():
                     if e1_destory_index == 0:
                             enemy1_down_sound.play()
                     if not(delay % 3):
-                        screen.blit(each.destory_images[e1_destory_index], each.rect)
+                        screen.blit(each.destroy_images[e1_destory_index], each.rect)
                         e1_destory_index = (e1_destory_index + 1) % 4
                         if e3_destory_index == 0:
                             score += 1000
@@ -292,7 +292,7 @@ def main():
                 if me_destory_index == 0:
                     me_down_sound.play()
                 if not(delay % 3):
-                    screen.blit(each.destory_images[me_destory_index], each.rect)
+                    screen.blit(each.destroy_images[me_destory_index], each.rect)
                     me_destory_index = (me_destory_index + 1) % 4
                     if me_destory_index == 0:
                         # each.reset()
