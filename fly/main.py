@@ -111,10 +111,10 @@ def main():
         bullet2.append(bullet.Bullet2((me.rect.centerx + 30, me.rect.centery)))
 
     # 中弹图片索引
-    e1_destory_index = 0
-    e2_destory_index = 0
-    e3_destory_index = 0
-    me_destory_index = 0
+    e1_destroy_index = 0
+    e2_destroy_index = 0
+    e3_destroy_index = 0
+    me_destroy_index = 0
     
     # 统计用户的得分
     score = 0
@@ -146,13 +146,13 @@ def main():
     pygame.time.set_timer(SUPPLY_TIME, 30 * 1000)
     
     # 超级子弹定时器
-    DOUBLE_BULLTE_TIME = USEREVENT + 1
+    DOUBLE_BULLET_TIME = USEREVENT + 1
     
     # 标志是否使用超级字段
     is_double_bullet = False
     
     # 解除我方无敌状态
-    INVINVLIBLE_TIME = USEREVENT + 2
+    INVINCIBLE_TIME = USEREVENT + 2
     
     # 用于切换图片
     switch_image = True
@@ -226,13 +226,13 @@ def main():
                 else:
                     bullet_supply.reset()
             
-            elif event.type == DOUBLE_BULLTE_TIME:
+            elif event.type == DOUBLE_BULLET_TIME:
                 is_double_bullet = False
-                pygame.time.set_timer(DOUBLE_BULLTE_TIME, 0)
+                pygame.time.set_timer(DOUBLE_BULLET_TIME, 0)
                 
-            elif event.type == INVINVLIBLE_TIME:
+            elif event.type == INVINCIBLE_TIME:
                 me.invincible = False
-                pygame.time.set_timer(INVINVLIBLE_TIME, 0)
+                pygame.time.set_timer(INVINCIBLE_TIME, 0)
                     
         # 根据用户的得分增加难度
         if level == 1 and score > 50000:
@@ -313,7 +313,7 @@ def main():
                     get_bullet_sound.play()
                     # 发射超级子弹
                     is_double_bullet = True
-                    pygame.time.set_timer(DOUBLE_BULLTE_TIME, 18*1000)
+                    pygame.time.set_timer(DOUBLE_BULLET_TIME, 18*1000)
                     bullet_supply.active = False
                 
             # 发射子弹
@@ -377,11 +377,11 @@ def main():
                 else: 
                     # 毁灭
                     if not(delay % 3):
-                        if e3_destory_index == 0:
+                        if e3_destroy_index == 0:
                             enemy3_down_sound.play()
-                        screen.blit(each.destory_images[e3_destory_index], each.rect)
-                        e3_destory_index = (e3_destory_index + 1) % 6
-                        if e3_destory_index == 0:
+                        screen.blit(each.destroy_images[e3_destroy_index], each.rect)
+                        e3_destroy_index = (e3_destroy_index + 1) % 6
+                        if e3_destroy_index == 0:
                             enemy3_fly_sound.stop()
                             score += 10000
                             each.reset()
@@ -414,12 +414,12 @@ def main():
                 else:
                     # 毁灭
                     if not(delay % 3):
-                        if e2_destory_index == 0:
+                        if e2_destroy_index == 0:
                             enemy2_down_sound.play()
                     
-                        screen.blit(each.destory_images[e2_destory_index], each.rect)
-                        e2_destory_index = (e2_destory_index + 1) % 4
-                        if e3_destory_index == 0:
+                        screen.blit(each.destroy_images[e2_destroy_index], each.rect)
+                        e2_destroy_index = (e2_destroy_index + 1) % 4
+                        if e3_destroy_index == 0:
                             score += 6000
                             each.reset()
                 
@@ -431,12 +431,12 @@ def main():
                 else:
                     # 毁灭
                     if not(delay % 3):
-                        if e1_destory_index == 0:
+                        if e1_destroy_index == 0:
                             enemy1_down_sound.play()
                     
-                        screen.blit(each.destory_images[e1_destory_index], each.rect)
-                        e1_destory_index = (e1_destory_index + 1) % 4
-                        if e3_destory_index == 0:
+                        screen.blit(each.destroy_images[e1_destroy_index], each.rect)
+                        e1_destroy_index = (e1_destroy_index + 1) % 4
+                        if e3_destroy_index == 0:
                             score += 1000
                             each.reset()
                             
@@ -456,14 +456,14 @@ def main():
             else:
                 # 毁灭
                 if not(delay % 3):
-                    if me_destory_index == 0:
+                    if me_destroy_index == 0:
                         me_down_sound.play()
-                    screen.blit(each.destory_images[me_destory_index], each.rect)
-                    me_destory_index = (me_destory_index + 1) % 4
-                    if me_destory_index == 0:
+                    screen.blit(each.destroy_images[me_destroy_index], each.rect)
+                    me_destroy_index = (me_destroy_index + 1) % 4
+                    if me_destroy_index == 0:
                         life_num -= 1
                         me.reset()
-                        pygame.time.set_timer(INVINVLIBLE_TIME, 3 * 1000)
+                        pygame.time.set_timer(INVINCIBLE_TIME, 3 * 1000)
                         
             # 绘制全屏炸弹数量
             bomb_text = bomb_font.render("x %d" % bomb_num, True, WHITE)
